@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Station</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="brand-logo d-flex gap-3">
+            <img src="/assets/logo.png" alt="" />
+            <div class="brand">
+              <h1>Tasty</h1>
+              <h1><span>Station</span></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="search-bar d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#eeeeee"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <input type="text" placeholder="Search menu, orders and more." />
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="user d-flex align-items-center justify-content-end gap-2">
+            <div
+              class="user-notification d-flex justify-content-center align-items-center"
+            >
+              <img src="/assets/bell.svg" alt="" srcset="" />
+            </div>
+            <div class="user-photos">
+              <img src="/assets/user-photos.jpg" alt="" srcset="" />
+            </div>
+            <div class="user-name-roles">
+              <div class="user-name">
+                <p>Ibrahim Kadri</p>
+              </div>
+              <div class="user-roles">
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End Of Header -->
+
+    <!-- Main Content -->
+
+    <div class="row">
+      <!-- Nav Content -->
+
+      <div class="col-lg-2">
+        <nav class="d-flex flex-column justify-content-between">
+          <div class="top">
+            <ul>
+              <li><i class="bi bi-copy"></i><a href="#">Dashboard</a></li>
+              <li class="menu-selected">
+                <i class="bi bi-calendar2-week"></i><a href="#">Order Line</a>
+              </li>
+              <li><i class="bi bi-kanban"></i><a href="#">Manage Table</a></li>
+              <li>
+                <i class="bi bi-egg-fried"></i><a href="#">Manage Dishes</a>
+              </li>
+              <li>
+                <i class="bi bi-person-fill-gear"></i><a href="#">Customers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom">
+            <ul>
+              <li><i class="bi bi-gear"></i><a href="#">Settings</a></li>
+              <li>
+                <i class="bi bi-info-circle"></i><a href="#">Help Center</a>
+              </li>
+              <li>
+                <i class="bi bi-box-arrow-right"></i><a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- End Of Nav Content -->
+
+      <!-- Food Content -->
+
+      <div class="col-lg-7">
+        <main>
+          <div class="order-line-container">
+            <h1>Order Line</h1>
+
+            <div class="order-category-container d-flex gap-2">
+              <div class="order-category selected-category">
+                <p>All</p>
+                <span class="order-totals">
+                  <p>78</p>
+                </span>
+              </div>
+
+              <div class="order-category">
+                <p>Dine In</p>
+                <span class="order-totals" style="background-color: #11605a">
+                  <p>04</p>
+                </span>
+              </div>
+
+              <div class="order-category">
+                <p>Wait List</p>
+                <span class="order-totals" style="background-color: #d94e15">
+                  <p>03</p>
+                </span>
+              </div>
+
+              <div class="order-category">
+                <p>Take Away</p>
+                <span class="order-totals" style="background-color: #68338b">
+                  <p>12</p>
+                </span>
+              </div>
+
+              <div class="order-category">
+                <p>Served</p>
+                <span class="order-totals" style="background-color: #023806">
+                  <p>59</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="order-history">
+              <div class="row">
+                <div class="col">
+                  <div class="order-card-container">
+                    <div class="order-id">
+                      <p>Order #F0027</p>
+                      <p>Table 03</p>
+                    </div>
+                    <div class="order-qty">
+                      <p>Item: 8X</p>
+                    </div>
+                    <div class="ongoing-order">
+                      <p>2 Mins Ago</p>
+                      <span class="order-status">
+                        <p>In Kitchen</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="order-card-container"
+                    style="background-color: #ffe2de"
+                  >
+                    <div class="order-id">
+                      <p>Order #F0028</p>
+                      <p>Table 07</p>
+                    </div>
+                    <div class="order-qty">
+                      <p>Item: 3X</p>
+                    </div>
+                    <div class="ongoing-order">
+                      <p>Just Now</p>
+                      <span
+                        class="order-status"
+                        style="background-color: #d34a14"
+                      >
+                        <p>Wait List</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="order-card-container"
+                    style="background-color: #e8d4ed"
+                  >
+                    <div class="order-id">
+                      <p>Order #F0028</p>
+                      <p>Table 07</p>
+                    </div>
+                    <div class="order-qty">
+                      <p>Item: 3X</p>
+                    </div>
+                    <div class="ongoing-order">
+                      <p>25 Mins ago</p>
+                      <span
+                        class="order-status"
+                        style="background-color: #6d3290"
+                      >
+                        <p>Ready</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="foods-menu-container">
+            <h1>Foods Menu</h1>
+
+            <div class="foods-menu-category-container">
+              <div class="row">
+                <div class="col">
+                  <div class="food-category">
+                    <div class="category-image">
+                      <img src="/assets/fast-food.png" alt="" />
+                    </div>
+                    <div class="food-menu">
+                      <p>All Menu</p>
+                      <p><span>154 items</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="food-category selected-category">
+                    <div class="category-image">
+                      <img src="/assets/fast-food.png" alt="" />
+                    </div>
+                    <div class="food-menu">
+                      <p>Special</p>
+                      <p><span>19 items</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="food-category">
+                    <div class="category-image">
+                      <img src="/assets/fast-food.png" alt="" />
+                    </div>
+                    <div class="food-menu">
+                      <p>Soups</p>
+                      <p><span>3 Items</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="food-category">
+                    <div class="category-image">
+                      <img src="/assets/fast-food.png" alt="" />
+                    </div>
+                    <div class="food-menu">
+                      <p>Desserts</p>
+                      <p><span>19 items</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="food-category">
+                    <div class="category-image">
+                      <img src="/assets/fast-food.png" alt="" />
+                    </div>
+                    <div class="food-menu">
+                      <p>Chickens</p>
+                      <p><span>10 items</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="menus-container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="food-menus">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Lunch</p>
+                        <p><span>Grilled Salmon Steak</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$15.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>0</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Salad</p>
+                        <p><span>Tofu Poke Bowl</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$7.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>0</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus selected-category">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Pasta</p>
+                        <p><span>Pasta with Roast Beef</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$10.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>2</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Beef</p>
+                        <p><span>Beef Steak</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$30.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>0</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top: 1rem">
+                  <div class="col-lg-3">
+                    <div class="food-menus selected-category">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Rice</p>
+                        <p><span>Shrimp Rice Bowl</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$6.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>2</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus selected-category">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Dessert</p>
+                        <p><span>Apple Stuffed Pancake</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$35.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>1</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Chicken</p>
+                        <p><span>Chicken Quiona & Herbs</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$12.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>0</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="food-menus selected-category">
+                      <div class="food-header-image">
+                        <img src="/assets/food.png" alt="" />
+                      </div>
+                      <div class="food-name">
+                        <p>Salad</p>
+                        <p><span>Vegetable Shrimp</span></p>
+                      </div>
+                      <div class="food-price">
+                        <p>$10.00</p>
+                        <div class="qty-button">
+                          <button>-</button>
+                          <p>1</p>
+                          <button class="plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- End Of Food Content -->
+
+      <!-- Right Content -->
+
+      <div class="col-lg-3">
+        <section class="order-info">
+          <div class="order-payment">
+            <div class="table-number d-flex justify-content-between">
+              <p>Table No #04</p>
+              <div class="table-settings d-flex gap-2">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </div>
+            </div>
+            <div class="table-order-info d-flex justify-content-between mt-1">
+              <p><span>Order #F0030</span></p>
+              <p>2 People</p>
+            </div>
+            <hr />
+            <div class="ordered">
+              <div class="ordered-qty d-flex justify-content-between">
+                <p>Ordered Items</p>
+                <p><span>05</span></p>
+              </div>
+              <div class="ordered-items d-flex justify-content-between mt-2">
+                <div class="items">
+                  <p>2x Pasta with Roast Beef</p>
+                  <p>2x Shrimp Rice Bowl</p>
+                  <p>1x Apple Stuffed Pancake</p>
+                  <p>1x Vegetable Shrimp</p>
+                </div>
+                <div class="price d-flex flex-column align-items-end">
+                  <p>$20.00</p>
+                  <p>$12.00</p>
+                  <p>$35.00</p>
+                  <p>$10.00</p>
+                </div>
+              </div>
+              <hr />
+              <div class="payment-summary">
+                <p>Payment Summary</p>
+                <div
+                  class="fw-normal ordered-items d-flex justify-content-between mt-2"
+                >
+                  <div class="items">
+                    <p>Subtotal</p>
+                    <p>Tax</p>
+                    <p>Donation for palestine</p>
+                  </div>
+                  <div class="price d-flex flex-column align-items-end">
+                    <p>$67.00</p>
+                    <p>$4.00</p>
+                    <p>$1.00</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="total-payment d-flex justify-content-between">
+                <p>Total Payable</p>
+                <p>$72.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="payment-method mt-4">
+            <p>Payment Info</p>
+            <div class="d-flex justify-content-between gap-1 mt-2">
+              <div class="cash d-flex gap-2">
+                <i class="bi bi-cash-stack"></i>
+                <p>Cash</p>
+              </div>
+              <div class="cash d-flex gap-2 selected-category">
+                <i class="bi bi-credit-card"></i>
+                <p style="color: black">Card</p>
+              </div>
+              <div class="cash d-flex gap-2">
+                <i class="bi bi-upc-scan"></i>
+                <p>Scan</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="place-order d-flex justify-content-between gap-2 align-items-end"
+          >
+            <div
+              class="print d-flex justify-content-center align-items-center gap-2"
+            >
+              <i class="bi bi-printer"></i>
+              <p>Print</p>
+            </div>
+            <div
+              class="send-order d-flex justify-content-center align-items-center gap-2"
+            >
+              <i class="bi bi-mouse"></i>
+              <p>Place Order</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- End Of Right Content -->
+    </div>
+    <!-- End Of Main Content -->
+  </body>
+</html>
